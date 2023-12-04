@@ -1,9 +1,3 @@
-local elevator = false
-RMenu.Add('elevator', 'menu', RageUI.CreateMenu("Elevator", ""))
-RMenu:Get('elevator', 'menu').Closed = function()
-    elevator = false
-end
-
 function DrawText3Ds(x, y, z, text)
     local px,py,pz=table.unpack(GetGameplayCamCoords())
     local dist = GetDistanceBetweenCoords(px,py,pz, x,y,z, 1)
